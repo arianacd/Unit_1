@@ -48,55 +48,28 @@ for x in range(4):
     turtle.forward(80)
     turtle.left(90)
 turtle.right(20)
-for x in range(4):
-    turtle.forward(80)
-    turtle.left(90)
-turtle.right(300)
-turtle.penup()
-turtle.forward(200)
-turtle.pendown()
-turtle.right(15)
-turtle.color("blue")
-turtle.begin_fill()
-def
-for x in range(5):
-    turtle.forward(80)
-    turtle.left(90)
-turtle.end_fill()
-turtle.forward(80)
-turtle.left(30)
-turtle.color("hot pink")
-turtle.begin_fill()
-for x in range(3):
-    turtle.forward(80)
-    turtle.left(120)
-turtle.end_fill()
-turtle.left(150)
-turtle.penup()
-turtle.forward(80)
-turtle.left(90)
-turtle.forward(100)
-turtle.pendown()
-turtle.color("orange")
-turtle.begin_fill()
-for x in range(5):
-    turtle.forward(80)
-    turtle.left(90)
-turtle.end_fill()
-turtle.forward(80)
-turtle.left(30)
-turtle.color("turquoise")
-turtle.begin_fill()
-for x in range(3):
-    turtle.forward(80)
-    turtle.left(120)
-turtle.end_fill()
-turtle.seth(270)
-turtle.up()
-turtle.fd(80)
 turtle.seth(0)
-turtle.fd(80)
-turtle.down
+turtle.penup()
+turtle.fd(100)
+turtle.down()
+
+def make_a_house():
+    turtle.color("red")
+    turtle.begin_fill()
+    for x in range(3):
+        turtle.forward(80)
+        turtle.left(120)
+    turtle.end_fill
+    turtle.lf(60)
+    turtle.color("blue")
+    turtle.begin_fill()
+    for x in range(4):
+        turtle.fd(80)
+        turtle.left(90)
+    turtle.end_color()
+
+
+make_a_house()
 
 
 turtle.exitonclick()
