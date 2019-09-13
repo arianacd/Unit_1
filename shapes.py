@@ -58,6 +58,7 @@ turtle.pendown()
 turtle.right(15)
 turtle.color("blue")
 turtle.begin_fill()
+def
 for x in range(5):
     turtle.forward(80)
     turtle.left(90)
