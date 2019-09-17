@@ -69,7 +69,6 @@ def make_a_house():
     turtle.end_color()
 
 
-make_a_house()
 
 
 turtle.exitonclick()

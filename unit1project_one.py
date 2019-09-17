@@ -23,19 +23,14 @@ def go_to(x, y):
     turtle.goto(x, y)
     turtle.down()
 
-# These lines make a hot pink octagon
+# the following lines make octagons of different colors in new locations
 
 
 makeanoctagon("hot pink")
-
-# These lines make a turquoise octagon to the left of the previous
 go_to(-150, 0)
 makeanoctagon("turquoise")
-
-# These lines make a magenta octagon below the previous
 go_to(-150, -150)
 makeanoctagon("magenta")
-# These lines make a cyan octagon to the right of the previous
 go_to(0, -150)
 makeanoctagon("cyan")
 
