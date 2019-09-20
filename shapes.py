@@ -1,4 +1,5 @@
 import turtle
+import random
 
 # makes a triangle
 turtle.speed(0)
@@ -63,23 +64,23 @@ turtle.seth(0)
 turtle.penup()
 turtle.goto(200,200)
 turtle.down()
-turtle.left(120)
 
 # function to make a house with different colors
-def make_a_house(color, color2):
+def make_a_house(color, color2, size):
     turtle.color(color)
     turtle.begin_fill()
-    for x in range(3):
-        turtle.forward(80)
+    for x in range(4):
+        turtle.forward(size)
         turtle.left(120)
     turtle.end_fill()
     turtle.left(60)
     turtle.color(color2)
     turtle.begin_fill()
     for y in range(4):
-        turtle.fd(80)
+        turtle.fd(size)
         turtle.left(90)
     turtle.end_fill()
+    turtle.seth(0)
 
 def go_to(x, y):
     turtle.penup()
@@ -87,10 +88,19 @@ def go_to(x, y):
     turtle.down()
 
 
-make_a_house("red", "blue")
+make_a_house("red", "blue", 5)
 
 go_to(-300, -300)
-make_a_house("green", "yellow")
 
+make_a_house("green", "yellow", random.randint(5, 300))
+
+go_to(300, -300)
+make_a_house("cyan", "magenta", random.randint(5, 300))
+go_to(150, -100)
+make_a_house("turquoise", "light green", random.randint(5, 300))
+go_to(250, -100)
+make_a_house("violet", "sky blue", random.randint(5, 300))
+go_to(350, -100)
+make_a_house("forest green", "pink", random.randint(5, 300))
 turtle.exitonclick()
 
